@@ -1,6 +1,6 @@
 # DEPI_ALX3_SWD5_S4 
 ## Friday 2:00 To 5:00 ONL
-## MonDay 7:00 To 10:00 Phy
+## Monday 7:00 To 10:00 Phy
 ## This repository To Digital Egypt Pioneers leadership ALX3_SWD5_S41.
 ### Day 1   in  SQL Server 
 ------------------
