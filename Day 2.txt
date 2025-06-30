@@ -1,0 +1,10 @@
+Session 2:
+*********** 
+Intermediate Query Writing and Data Manipulation                                                Done
+Exploring SQL Server data types and their usage                                                 Done 
+Writing Data Manipulation Language (DML) statements for inserting, updating, and deleting data  Done
+Utilizing built-in functions in queries
+Aggregating data using GROUP BY and aggregate functions
+Crafting subqueries for complex data retrieval
+
+
