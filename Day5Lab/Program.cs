@@ -154,6 +154,7 @@
             //Class Members                      Done 
             //         Fields                    Done
             //         Methods                   Done
+            //         Encapsulation             Done
             //         Property Full             Done
             //         Property Auto             Done
             //         Create Object From Class  Done
@@ -168,7 +169,7 @@
             //Type Can Be DataType                             Done
             //Types Enum, Struct ( Value type )                Done
             //Use type(Enum , Struct)                          Done
-            //Windows Form
+            //Windows Form   Intro                             Done    
             //--------
 
 
