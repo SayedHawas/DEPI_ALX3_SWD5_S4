@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("-------- Day 5 Demos ---------");
-            //Push & Pull & Clone Github Repos  Done 
+            //Push & Pull & Clone GitHub Repos  Done 
             #region Session Part 1 
             ////How to create Object From Class 
             //Person ahmed = new Person();
@@ -147,7 +147,7 @@
             //    1 - Object Class           Done
             //    2 - Inheritance            Done
             //    3 - Polymorphism           Done
-            //    4 - Encapsulation
+            //    4 - Encapsulation property Done
             //    5 - Abstraction
 
             //Create Class                       Done
