@@ -45,9 +45,10 @@ namespace Day6Lab
 	                file: Only code in the same file can access the type or member.
                
               Extension Method                                                Done
-
-             8 - IO Library
-            -----------------------------------------------------------------------------
+            -----------------------------------------------------------------------------------------------------------------------------------------------
+            * Generic type.
+            8 - IO Library
+       
             7 - Abstraction
                       - Abstract Class   0 To 100%    method , Abstract Method
                       - Interface     100%  
