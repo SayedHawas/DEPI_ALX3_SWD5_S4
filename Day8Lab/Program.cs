@@ -31,107 +31,173 @@
              */
             #region Session Part 1
             //LINQ
-            int[] Numbers = new int[5] { 1, 22, 66, 77, 55 };
-            var x = from n in Numbers
-                    where n % 2 == 0
-                    select n;
-            foreach (var item in x)
-            {
-                Console.WriteLine(item);
-            }
-            Console.WriteLine("--------------");
-            var y = Numbers.Where(x => x % 2 == 1);
-            foreach (var item in y)
-            {
-                Console.WriteLine(item);
-            }
-            List<int> numbers = new List<int>();
-            //1)Implicit type(Var)
+            //int[] Numbers = new int[5] { 1, 22, 66, 77, 55 };
+            //var x = from n in Numbers
+            //        where n % 2 == 0
+            //        select n;
+            //foreach (var item in x)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //Console.WriteLine("--------------");
+            //var y = Numbers.Where(x => x % 2 == 1);
+            //foreach (var item in y)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //List<int> numbers = new List<int>();
+            ////1)Implicit type(Var)
 
-            //2)Object Initializer.
-            Employee e = new Employee() { Id = 1, Name = "", Age = 25 };
-            //e.Id = 1;
-            //e.Name = "";
-            //e.Age = 25;
-            Employee e2 = new Employee { Id = 1, Name = "", Age = 25 };
+            ////2)Object Initializer.
+            //Employee e = new Employee() { Id = 1, Name = "", Age = 25 };
+            ////e.Id = 1;
+            ////e.Name = "";
+            ////e.Age = 25;
+            //Employee e2 = new Employee { Id = 1, Name = "", Age = 25 };
 
-            //3)Anonymous Object.
-            new Employee();
+            ////3)Anonymous Object.
+            //new Employee();
 
-            //4)Collection Initializer.
-            //Type Can Be DataType
-            List<Employee> list = new List<Employee>() {
-            new Employee(){ Id=1, Name = "tamer", Age= 25},
-            new Employee(){ Id=2, Name = "yasser", Age= 30},
-            new Employee(){ Id=3, Name = "sayed", Age= 35},
-            new Employee(){ Id=4, Name = "Mariem", Age= 45}
-            };
+            ////4)Collection Initializer.
+            ////Type Can Be DataType
+            //List<Employee> list = new List<Employee>() {
+            //new Employee(){ Id=1, Name = "tamer", Age= 25},
+            //new Employee(){ Id=2, Name = "yasser", Age= 30},
+            //new Employee(){ Id=3, Name = "sayed", Age= 35},
+            //new Employee(){ Id=4, Name = "Mariem", Age= 45}
+            //};
 
-            var xx = from c in list
-                     where c.Age > 30
-                     select c;
-            foreach (var item in xx)
-            {
-                Console.WriteLine($" Id : {item.Id} Name {item.Name} ,Age {item.Age} ");
-            }
-            //5)Anonymous Types.
+            //var xx = from c in list
+            //         where c.Age > 30
+            //         select c;
+            //foreach (var item in xx)
+            //{
+            //    Console.WriteLine($" Id : {item.Id} Name {item.Name} ,Age {item.Age} ");
+            //}
+            ////5)Anonymous Types.
 
-            var v = new { Id = 1, Name = "", Salary = 20000, Address = "Alex" };
-            //v.Id = 5; Read Only 
+            //var v = new { Id = 1, Name = "", Salary = 20000, Address = "Alex" };
+            ////v.Id = 5; Read Only 
 
-            var tt = from c in list
-                     where c.Age > 30
-                     select new { c.Name, c.Id };
+            //var tt = from c in list
+            //         where c.Age > 30
+            //         select new { c.Name, c.Id };
 
-            foreach (var item in tt)
-            {
-                Console.WriteLine($" Id : {item.Id} Name {item.Name} ");
-            }
-
-
-            //6)Dynamic Name.
-            var vv = (string)null;
-            //int n = null;
-
-            var b = 1.25;
-            //b = "Ahmed";
-
-            dynamic dd = "Ahmed";
-
-            Console.WriteLine(dd.Length);
-
-            dd = 1.25;
-            // Console.WriteLine(dd.Length);
+            //foreach (var item in tt)
+            //{
+            //    Console.WriteLine($" Id : {item.Id} Name {item.Name} ");
+            //}
 
 
+            ////6)Dynamic Name.
+            //var vv = (string)null;
+            ////int n = null;
 
-            dynamic myObject = new System.Dynamic.ExpandoObject();
-            myObject.DynamicPropertyName = "Some Value"; // Adding a property with a dynamic name
-            Console.WriteLine(myObject.DynamicPropertyName);
+            //var b = 1.25;
+            ////b = "Ahmed";
 
-            //7)Generic type.
+            //dynamic dd = "Ahmed";
 
+            //Console.WriteLine(dd.Length);
 
-            //8)Extension Methods.
-            //Static Class Type This
-            String Str = new String(new char[] { 'a', 'h', 'm', 'e', 'd' });
-            string str2 = "Ahmed";
-            Console.WriteLine(str2.CutLetter());
-            int xn = 100;
-            short sh = 200;
-            long l = 2000;
-
-            Int32 II = new Int32();
-            II = 200;
-
-            //9)Delegate.
+            //dd = 1.25;
+            //// Console.WriteLine(dd.Length);
 
 
-            Console.ReadLine();
+
+            //dynamic myObject = new System.Dynamic.ExpandoObject();
+            //myObject.DynamicPropertyName = "Some Value"; // Adding a property with a dynamic name
+            //Console.WriteLine(myObject.DynamicPropertyName);
+
+            ////7)Generic type.
+
+
+            ////8)Extension Methods.
+            ////Static Class Type This
+            //String Str = new String(new char[] { 'a', 'h', 'm', 'e', 'd' });
+            //string str2 = "Ahmed";
+            //Console.WriteLine(str2.CutLetter());
+            //int xn = 100;
+            //short sh = 200;
+            //long l = 2000;
+
+            //Int32 II = new Int32();
+            //II = 200;
+
+
+
+
+
             #endregion
 
+            #region Session Part 2
+            //9)Delegate.
+            // Delegates are used as pointers to methods that handle events
+            /*
+             - Delegates is A Function Pointer
+             - Delegate  is a type safe Function
+             - Delegate  is Reference type (Heap) 
+             - the Signature of Delegate Must Match the Signature Of Function Pointed it. 
+            */
+            //calling 
+            SayHelloHandler sh = new SayHelloHandler(Sayhello);
+            sh("Welcome in Delegate");
+
+            // Employee.MyConditionHandler ch = new Employee.MyConditionHandler(MyCondition);
+
+            Predicate<Employee> chech = delegate (Employee e) { return e.Salary > 5000; };
+            Predicate<Employee> chech2 = e => e.Salary > 5000;
+
+            Employee.Report(Employee.ListEmployees, new Employee.MyConditionHandler(e => e.Salary > 5000));
+
+
+            //Employee.Report(Employee.ListEmployees, delegate (Employee emp) { return emp.Salary > 4000; });
+            //  1.Shape 
+            // Employee.Report(Employee.ListEmployees, ( emp) { return emp.Salary > 4000; });
+            // 2 .Now Use => instead Of return 
+            Employee.Report(Employee.ListEmployees, emp => emp.Salary > 4000);
+            Console.ReadLine();
+
+
+
+            Func<int, int, int> add = delegate (int x, int y) { return x + y; };
+            Func<int, int, int> add2 = (x, y) => x + y;
+            Action<int> dd = delegate (int x) { Console.WriteLine(x); };
+            Action<int> d = x => Console.WriteLine(x);
+            Predicate<int> TT = delegate (int t) { return t > 10; };
+
+            Predicate<int> cc = c => true;
+
+            var x = delegate (Employee emp) { return emp.Salary > 4000; };
+
+            //-Func      : deleget Which return One Value.              16 Input parameters  With Return(Function) 17 Output
+            //Func <int, int ,int> increment = i => i + 1;
+
+
+
+
+
+
+
+
+
+
+            #endregion
+            Console.ReadLine();
+        }
+        public delegate void SayHelloHandler(string str);
+        public static void Sayhello(string str)
+        {
+            Console.WriteLine("Welcome " + str);
         }
 
+
+        //public static bool MyCondition(Employee emp)
+        //{
+        //    // return emp.Attend;
+        //    //return emp.Salary > 5000;
+        //    return emp.Job == "Developer";
+        //}
 
     }
     public static class MyString
