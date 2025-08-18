@@ -26,6 +26,11 @@ namespace Day7Lab
             Console.WriteLine($"As Manager My Name is {_name}");
         }
 
+        public override double Income()
+        {
+            throw new NotImplementedException();
+        }
+
         public void OpenConnection()
         {
             throw new NotImplementedException();
