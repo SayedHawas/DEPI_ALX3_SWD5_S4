@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Hello, World!");
 
-            IDemo Id = new IDemo();
+            //IDemo Id = new IDemo();
 
         }
     }
