@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mainHeader{
+           text-align:center;
+           background-color: rgb(80, 247, 227);
+           min-height: 50px;
+           border: 3px solid black;
+        }
+          nav{
+           background-color: rgb(6, 73, 206);
+           min-height: 20px;
+           border: 3px solid black;
+        }
+        nav ul{
+            list-style: none;
+        }
+        nav ul li {
+            display: inline-block;
+            padding: 5px;
+        }
+         nav ul li a {
+            color:white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            color:rgb(244, 6, 6);
+        }
+        #MainSection{
+            width: 80%;
+            border: 2px solid black;
+           display: inline-block;
+        }
+        aside{
+         margin: 0;
+           width: 19%;
+           border: 2px solid black;
+           display: inline-block;
+         
+           min-height:30px;
+        }
+
+         #MainFooter{
+           text-align:center;
+           background-color: rgb(96, 96, 96);
+           min-height: 50px;
+           border: 2px solid black;
+        }
+        article{
+            margin: 2px 0;
+            padding: 2px;
+           border: 2px solid black;
+           background-color: rgb(1, 142, 184);
+        }
+        article header{
+            border: 1px solid black;
+           background-color: rgb(88, 110, 117);
+        }
+         article Footer{
+            border: 1px solid black;
+           background-color: rgb(88, 110, 117);
+        }
+    </style>
+</head>
+<body>
+    <header id="mainHeader">
+        Welcome in HTML5 Layout  
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Client</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <section id="MainSection">
+         <p id="Para">
+             Exame
+         </p>
+        <article>
+              <header> SQL Query </header>
+              <div>
+                    Understanding CSS Text Styles<br/>
+                    The CSS Box Model<br/>
+                    Styling Backgrounds in CSS<br/>
+                    Demonstration: Adding CSS Styles to an HTML Page<br/>
+                    Demonstration: Creating and Styling an HTML5 Page</br>
+              </div>
+              <footer> In Exam</footer>
+        </article>
+        <article>
+              <header> C# Programming  </header>
+              <div>
+                    Understanding CSS Text Styles<br/>
+                    The CSS Box Model<br/>
+                    Styling Backgrounds in CSS<br/>
+                    Demonstration: Adding CSS Styles to an HTML Page<br/>
+                    Demonstration: Creating and Styling an HTML5 Page</br>
+              </div>
+              <footer> In Exam</footer>
+        </article>
+         <article>
+             <table border="1">
+                <tr>
+                    <th> Name</th>
+                    <th> age </th>
+                    <th> Salary</th>
+                </tr>
+                <tr>
+                    <td> Ahmed</td>
+                    <td> 25 </td>
+                    <td> 15000</td>
+                </tr>
+             </table>
+        </article>
+        
+    </section>
+    <aside>
+        <img src="images/currandox2.jpg" width="100" height="100">
+       
+            <p> Youtube</p>
+            <p> FaceBook</p>
+            <p> X</p>
+   </aside>
+    <summary>
+        WElcome in Page 
+        <details>
+              <p>In this module, we look at the history of HTML and CSS.</p>
+        </details>
+    </summary>
+ <video src="images/Dev.mp4" width="400" height="400"  controls="controls" poster="images/Picture1.png" >
+    <!--loop="loop" autoplay="autoplay"-->       
+      <source src="images/Dev.mp4" type="video/mp4">
+      <source src="images/Dev.ogg" type="video/ogg">
+           Your browser does not support the video tag.
+        </video>
+    <footer id="MainFooter">
+           Smart Software &copy;2025 
+    </footer>
+</body>
+</html>

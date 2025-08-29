@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day12Lab", "Day12Lab\Day12L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smart20480C", "Smart20480C\Smart20480C.csproj", "{BC7FD05B-3132-4A35-91CE-EC3AB81AE947}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day13Lab", "Day13Lab\Day13Lab.csproj", "{F08E673B-E3E9-4C12-88C8-E50311B15063}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{BC7FD05B-3132-4A35-91CE-EC3AB81AE947}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC7FD05B-3132-4A35-91CE-EC3AB81AE947}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC7FD05B-3132-4A35-91CE-EC3AB81AE947}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F08E673B-E3E9-4C12-88C8-E50311B15063}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F08E673B-E3E9-4C12-88C8-E50311B15063}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F08E673B-E3E9-4C12-88C8-E50311B15063}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F08E673B-E3E9-4C12-88C8-E50311B15063}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
