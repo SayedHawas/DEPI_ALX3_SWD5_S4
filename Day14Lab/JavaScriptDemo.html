@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="/MyScript.js" ></script> -->
+    <link href="Mystyle.css" rel="stylesheet">
+    <style>
+        h1{
+            color:red;
+        }
+    </style>
+    <script>
+        //window.alert("Welcome in JavaScript From Head ....");
+         //document.writeln("Welcome " + name );
+    </script>
+</head>
+<body>
+  
+    <!--Style in-Line-->
+    <h1 id="myhaed" style="text-align: Center;"> Welcome in JavaScript</h1>
+    <Pre>
+        Session 1: 
+        Introduction to JavaScript
+        Understanding the role of JavaScript in web development
+        Exploring the syntax and structure of JavaScript
+        Writing your first JavaScript code
+        Learning about variables, data types, and operators
+        Session 2:
+        Control Structures and Functions
+        Delving into control structures: if-else, loops, and switch statements
+        Understanding functions: declaration, parameters, return values, and scope
+        Working with arrays and objects in JavaScript
+        Event handling and interacting with the Document Object Model (DOM)
+    </Pre>
+
+    <table  >
+        <tr>
+            <td> <label> Number 1 </label></td>
+            <td><input type="number" id="num1" ></td>
+        </tr>
+        <tr>
+            <td> <label> Number 2 </label></td>
+            <td><input type="number" id="num2" ></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button onclick="Sum('num1','num2' , 'result')"> Sum</button>
+            </td>
+            
+        </tr>
+        <tr>
+            <td> 
+                <oputput id="result">
+
+                </oputput>
+            </td>
+            
+        </tr>
+    </table>
+      
+
+
+      <!--<button Onclick="window.alert('Welcome in Javascript From Button ....')"; >Click Me </button>-->
+
+      <script>
+        //Code 
+        //BOM Broswer Object Model 
+        //Output
+          //window.alert("Welcome in Javascript  From Body ....");
+
+          //output & input in javascript
+          //input 
+        //  var name = window.prompt("Enter Your Name ","");
+        //  //output
+        //  window.alert("Welcome " + name);
+
+        //DOM Documnt Object Model
+        //document.writeln("Welcome " + name );
+        
+
+       
+        function Sum(x , y , result)
+        {
+            var n1 = document.getElementById(x).value;
+            var n2 = document.getElementById(y).value;
+            //window.alert(n1);
+            document.getElementById(result).innerText = (parseInt(n1)+parseInt(n2));
+        }
+
+         //Operator  + , - , * , / , ++ ,= ,== === < > ! Not && || 
+         var x = 100;
+         var y = 200;
+         debugger;
+         var z = x+y ;
+         z= z-y;
+         z=x*y;
+         z=x/y;
+         z++;
+         ++z;
+
+         var b = (5>6);
+         b= (7<8);
+         b= (x=='100');
+         b=(x==='100');
+
+       b=(x!=100);
+        b= (x>100 && y <300);
+        b= (x==100 || y <400);
+
+        //Function Without Parameters  Not return 
+        function showMessage()
+        {
+           window.alert("Welcome ...");
+        }
+        //Function With Parameters  Not return 
+        function showMessage( stringMessage)
+        {
+           window.alert("Welcome"+ stringMessage +" ..." );
+        }
+        //Return Function 
+         function Sum(x, y)
+        {
+           var z = parseInt(x) + parseInt(y);
+           return z;
+        }
+
+
+        var EmployeeSalary = function (salary , bouns)
+        {
+               return parseFloat( salary) + parseFloat( bouns);
+        }
+
+        EmployeeSalary(15000,2000);
+    </script>
+</body>
+</html>

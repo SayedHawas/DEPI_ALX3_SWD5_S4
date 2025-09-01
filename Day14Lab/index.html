@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Welcome in JavaScript</h1>
+
+    <form Method="post" action="/" >
+        <fieldset>
+          <legend> Add Department  </legend>
+       
+        <table>
+            <tr>
+                <td><label for="txtusername">User Name</label></td>
+                <td> <input type="text" id="txtusername" name="userName" placeholder="Enter Your UserName" required ></td>
+            </tr>
+            <tr>
+                <td> <label for="txtPassowrd">Password</label></td>
+                <td><input type="password" id="txtPassowrd" name="Password" placeholder="Enter Your Password" required></td>
+            </tr>
+
+            <tr>
+                <td> <label for="txtMobile">Mobile</label></td>
+                <td><input type="tel" id="txtMobile" name="Mobile" placeholder="Enter Your Mobile" pattern="^01[0-2,5][0-9]{8}$" title="Plz enter correct Mobile Number " ></td>
+            </tr>
+
+              <tr>
+                <td> <label for="txtEmail">Email</label></td>
+                <td><input type="email" id="txtEmail" name="Email" placeholder="Enter Your Email" ></td>
+            </tr>
+ 
+                <tr>
+                <td> <label for="txtWebSite">WebSite</label></td>
+                <td><input type="url" id="txtWebSite" name="webSite" placeholder="Enter Your LinkedIn" ></td>
+            </tr>
+             <tr>
+                <td> <label for="txtDate">HireDate</label></td>
+                <td><input type="date" id="txtDate" name="Date"  ></td>
+                 <td><input type="datetime" id="txtDate2" name="Date1"  ></td>
+                 <td><input type="datetime-local" id="txtDate3" name="Date2"  ></td>
+                 <td><input type="week" id="txtDate4" name="Date3"  ></td>
+                 <td><input type="month" id="txtDate5" name="Date4"  ></td>
+            </tr>
+
+
+
+                <tr>
+                    <td><label For="num1">Salary :</label></td>
+                    <td><input type="number" id="num1"  max="10000" value="200" /></td>
+                </tr>
+                <tr>
+                    <td><label for="ren1">Volume :</label></td>
+                    <td><input type="range" id="ren1" min="0" max="255" /></td>
+                </tr>
+                <tr>
+                    <td><label For="color1">color :</label></td>
+                    <td><input type="color" id="color1" /></td>
+                </tr>
+                <tr>
+                    <td><label>Gender :</label></td>
+                    <td><input type="radio" id="radio2" value="male" name="gender" checked="checked" /> Male</td>
+                    <td><input type="radio" id="Radio1" value="female" name="gender"  />female</td>
+                    
+                </tr>
+                    <tr>
+                    <td><label>you Have A Car ? :</label></td>
+                    <td><input type="radio" id="Yes" value="Yes" name="Q" /> YES</td>
+                    <td><input type="radio" id="No" value="No"  name="Q" />NO</td>
+                </tr>
+                <tr>
+                    <td><label>Type Of Car ? :</label></td>
+                    <td><input type="checkbox" id="ch1" value="Fait" /> FAIT</td>
+                    <td><input type="checkbox" id="ch2" value="BMW"  checked="checked"  />BMW</td>
+                </tr>
+                <tr>
+                    <td><label>Search :</label></td>
+                    <td><input type="search" id="Search1" /> </td>
+                </tr>
+
+                <tr>
+                    <td><label>progress bar :</label></td>
+                    <td><progress id="progress1" max="100" value="50" ></progress> </td>
+                </tr>
+
+                <tr>
+                    <td><label>My Laptop:</label></td>
+                    <td>
+                        <select id="List1" name="Laptop">
+                                <option value="HP">HP</option>
+                                <option value="Dell" selected="selected">Dell</option>
+                                <option value="sony">Sony</option>
+                                <option value="MaC">MaC</option>  
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Description:</label></td>
+                    <td>
+                        <textarea id="textarea1" name="des" cols="50" rows="5"> 
+                    </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>My laptop:</label></td>
+                    <td>
+                        <input list="laptops" />
+                    <datalist id="laptops">
+                        <option value ="HP" >
+                        <option value ="DEll" >
+                        <option value ="Sony" >
+                    </datalist>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label> Upload File :</label></td>
+                    <td><input type="file" id="file" multiple="multiple" /> </td>
+                </tr>
+
+                <tr>
+                    <td><label> Output</label></td>
+                    <td><output  value="Welcome From Form Output ..."> Welcome in Form</td>
+                </tr>
+                
+                <tr>
+                <td><input type="submit" id="submit" value="Send Data"></td>
+
+               <td><input type="reset" id="reset" value="Clean Data"></td> 
+            </tr>
+                <tr>
+
+               <td><button id="btn" onclick="showMessage()"> Welcome </button></td> 
+            </tr>
+        </table>
+        
+         </fieldset>
+    </form>
+    
+    <script>
+        function showMessage()
+        {
+            window.alert("Welcome in JavaScript ....");
+        }
+        
+    </script>
+</body>
+</html>
