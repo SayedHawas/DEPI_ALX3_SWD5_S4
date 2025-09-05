@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+       Enter Your Name : <input type="text"  id="txtName">
+    <br>
+    <p id="para" style="color:red">
+
+    </p>
+      <button onclick="checkName('txtName')"> Click Me</button>
+
+
+    <table>
+        <tr>
+            <td><label> Number1 </label></td>
+            <td><input type="text" id=txtNumber1 ></td>
+        </tr>
+         <tr>
+            <td><label> Number2 </label></td>
+            <td><input type="text" id=txtNumber2 ></td>
+        </tr>
+         <tr>
+            <td><button onclick="sum('txtNumber1', 'txtNumber2' , 'result')"> SUM</button></td>
+            <td><output id="result"></td>
+        </tr>
+    </table>
+
+    <ul id="Mylist">
+
+    </ul>
+    <button   onclick="LoadItem()"> Load Items </button>
+    <script>
+     
+        var x = 10;
+        console.log(x  + typeof(x));
+
+        y=100;
+        console.log(y  + typeof(y));
+
+        var n ="Welcome";
+        console.log(n + " type " + typeof(n) );
+       //alert("Welcome JS ...");
+       //Null , Undifind , Number , string , boolean 
+       // Object Document DOM  (Document Object Model)
+
+       function sum(x, y , result)
+       {
+          n1 = document.getElementById(x).value; //String
+          n2 = document.getElementById(y).value;
+
+          document.getElementById(result).innerText = parseInt(n1) + parseInt(n2);
+       }
+        // debugger;
+        function show()
+        {
+           document.write("Hello");
+           //return;
+        }
+        //---3 Anonymous function
+        var EmployeeSalary =function(salary ,bouns){
+        return salary + bouns;
+        }
+       //To call    
+       EmployeeSalary(1000,200);
+       window.alert(EmployeeSalary(10000,2000));
+       //---------------------------------------
+         const xx =100;
+         console.log(xx);
+        //  x=200;
+        //  console.log(x);
+ 
+        var h = 2000;
+        console.log(h + "Type Of " + typeof(h));
+        var h="Ahmed"
+        console.log(h + "Type Of " + typeof(h));
+
+
+        let l = 2000;
+        console.log(l + "Type Of " + typeof(l));
+
+        var M="Ahmed"
+        console.log(l + "Type Of " + typeof(l));
+
+       //---------------------------------------
+        //Loop
+      
+       //For
+    //     document.write("<br/>");
+    //     for(var i =0; i<10;i++)
+    //     {
+    //       document.write(" number  : " + i + "<br/>");
+    //     }
+    //     document.write(" While -------------------- <br/>");
+    //     //while 
+    //     var x =0;
+    //     while(x<10)
+    //     {
+    //        document.write(" number  : " + x + "<br/>");
+    //        x++
+    //     }
+    //      document.write(" Do -------------------- <br/>");
+    //    //Do    Run one At less if condtion is Breaken 
+    //     var y=0;
+    //     do{
+    //     document.write(" number  : " + y + "<br/>");
+    //     y++
+    //     }while(y<10)
+
+
+
+        function checkName(str)
+        {
+            name = document.getElementById(str).value;
+
+            if(name ==='Ahmed')
+            {
+               document.getElementById('para').innerText = "welcome " + name ;
+               document.getElementById('para').style.color='green';
+            }
+            else 
+            {
+                 document.getElementById('para').innerText = "hello " + name ;
+                 document.getElementById('para').style.color='red';
+            }
+        }
+
+
+
+        var day = prompt("Enter numebr of day","");
+        day = parseInt(day);
+        switch(day)
+        {
+            case 1:
+            case 2:
+            case 3:
+            alert("businss Day ");
+                break;
+            case 4:
+            case 5:
+            alert("hafe week");
+            break;
+            case 6 :
+            case 7 :
+                alert("holiday");
+                break;
+            default:
+                alert ("Invalid Day");
+                break;
+        }
+
+
+//Array 
+// 1-
+
+var colorArr= new Array();
+ colorArr[0]="red";
+ colorArr[1]="yellow";
+ colorArr[2]="blue";
+
+ for (let i = 0; i < colorArr.length; i++) {
+    document.writeln("<p style='color:"+colorArr[i]+"'> " + colorArr[i] + "</p>")
+ }
+
+//2-   
+var colorArr1= new Array(3);
+ colorArr1[0]="red";
+ colorArr1[1]="yellow";
+ colorArr1[2]="blue";
+  for (let i = 0; i < colorArr1.length; i++) {
+    document.writeln("<p style='color:"+colorArr1[i]+"'> " + colorArr1[i] + "</p>")
+ }
+
+// //3-
+var colorArr2 = ["red","yellow","blue"];
+ for (let i = 0; i < colorArr2.length; i++) {
+    document.writeln("<p style='color:"+colorArr2[i]+"'> " + colorArr2[i] + "</p>")
+ }
+
+
+        function LoadItem()
+        {
+          
+            var List =document.getElementById("Mylist");
+
+            var item =  document.createElement('li');
+            item.textContent = "Welcome";
+            //<li> Welcome </li>
+            List.appendChild(item);
+
+        }
+    </script>
+</body>
+</html>

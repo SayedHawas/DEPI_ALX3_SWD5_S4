@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!--onblur="validationText('txtname')"-->
+   Name : <input type="text" id="txtname"  >
+   <button onclick="validationText('txtname')"> Check Value </button>
+<br>
+  Another input : <input type="text" id="txt" onfocus="validationText('txtname')">
+
+    <script>
+        function validationText(txt) {
+            var t = document.getElementById(txt);
+            if (t.value == 0 || t.value == null) {
+                alert('your must Enter value');
+                t.focus();
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>
