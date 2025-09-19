@@ -1,0 +1,6 @@
+@Day16LabWebAPI9Demo_HostAddress = http://localhost:5051
+
+GET {{Day16LabWebAPI9Demo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
