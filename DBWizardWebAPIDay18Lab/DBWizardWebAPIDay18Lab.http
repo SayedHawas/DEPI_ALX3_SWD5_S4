@@ -1,0 +1,6 @@
+@DBWizardWebAPIDay18Lab_HostAddress = http://localhost:5023
+
+GET {{DBWizardWebAPIDay18Lab_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

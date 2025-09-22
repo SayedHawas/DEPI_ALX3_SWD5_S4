@@ -1,0 +1,6 @@
+@DBFirstWebApiDay18Lab_HostAddress = http://localhost:5055
+
+GET {{DBFirstWebApiDay18Lab_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
