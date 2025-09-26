@@ -1,0 +1,6 @@
+@WebAPIDay4Day20Lab_HostAddress = http://localhost:5270
+
+GET {{WebAPIDay4Day20Lab_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
